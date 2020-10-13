@@ -1,0 +1,64 @@
+ <!-- Icons made by <a href="https://www.flaticon.com/authors/smashicons" title="Smashicons">Smashicons</a> from <a href="https://www.flaticon.com/" title="Flaticon"> www.flaticon.com</a> -->
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <title>Astronomy Quiz</title>
+	<script src="quizproject.js"></script>
+	<link rel="stylesheet" type="text/css" href="quizproject.css">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	
+	<link rel="manifest" href="manifest.json">
+	
+	<link rel="apple-touch-icon" href="/icons/icon-192x192.png">
+	<meta name="theme-color" content="#616283"> 
+</head>
+<body onLoad="initialize()">
+
+	<div id="lightbox" onclick="closeLightBox()">
+	
+	<div id="message">This is a message</div>
+	
+	
+	</div>
+
+
+
+	<h2>Astronomy Quiz</h2>
+	<p>Please answer the following questions.</p>
+
+	<div class="grid-container">
+	  <div class="header">
+		<div id="question">The Question</div>
+	  </div>
+	  
+	  <div class="left">
+		<div>
+		 <div class="options" id="a" onclick="markIt('a')">A.</div>
+		 <div class="options" id="b" onclick="markIt('b')">B.</div>
+		 <div class="options" id="c" onclick="markIt('c')">C.</div>
+		 <div class="options" id="d" onclick="markIt('d')">D.</div>
+		</div>
+	  </div> 
+
+	  
+	  <div class="right"> <img id="image" src="quizimages/astronomy-q1.jpg" alt="q1"></div>
+	  
+	  <div class="footer1">
+		 <div id="gobackquestion" onclick="goBackQuestion()">Go Back A Question</div>
+	  </div>
+	  
+	  <div class="footer2">
+		 <div id="nextquestion" onclick="nextQuestion()">Next Question</div>
+	  </div>
+	  
+	  <div class="footer3">
+	  <p id="score">Score</p>
+	  </div>
+	</div>
+
+	
+</body>
+</html>
